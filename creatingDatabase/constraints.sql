@@ -1,0 +1,26 @@
+-- 04 constraints
+-- database: scratch
+
+DROP TABLE IF EXISTS test;
+CREATE TABLE test (
+    a INTEGER,
+    b VARCHAR(255)
+);
+INSERT INTO TEST ( b ) VALUES ( 'one' );
+DESCRIBE test;
+SELECT * FROM test;
+
+CREATE TABLE test (
+    a INTEGER NOT NULL,
+    b VARCHAR(255)
+);
+
+CREATE TABLE test (
+    a INTEGER NOT NULL DEFAULT 47,
+    b VARCHAR(255) UNIQUE
+);
+
+INSERT INTO TEST ( b ) VALUES ( NULL );
+SHOW INDEX FROM test;
+
+DROP TABLE IF EXISTS test;
